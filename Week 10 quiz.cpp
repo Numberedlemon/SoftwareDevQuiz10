@@ -30,7 +30,7 @@ int main() {
     vector<string> validPass = {};
 
     for (int i = 0; i <= FILE_LENGTH; i++) {
-        if (input[i].length() < 8 && containsDigit(input[i]) == true) {
+        if (input[i].length() >= 8 && containsDigit(input[i]) == true) {
             validPass.push_back(input[i]);
         }
         else {
